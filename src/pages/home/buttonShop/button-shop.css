@@ -1,0 +1,40 @@
+.button-shop{
+    height: 90px;
+    background-color: black;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.button-shop::after{
+    content: "";
+    position: absolute;
+    bottom: -112px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 136px;
+    background-color: var(--primary-color);
+}
+
+.button-shop__link{
+    margin: auto;
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: 1px solid var(--primary-color);
+    transition: color 0.2s ease;
+    padding: 10px;
+}
+
+.button-shop__icon{
+    padding-left: 10px;
+}
+
+.button-shop__link:hover{
+    color: var(--white-color);
+}
+
+

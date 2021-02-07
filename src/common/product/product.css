@@ -1,0 +1,36 @@
+/* product item */
+.row-product {
+    margin-left: 42px;
+    margin-right: 42px;
+}
+
+.product-item{
+    cursor: pointer;
+}
+.product-item__img{
+    background-size: contain;
+    height: 334px;
+    background-repeat: no-repeat;
+}
+
+.product-item__footer-info{
+    background-color: black;
+    padding: 22px 10px;
+}
+
+.product-item__name{
+    display: block;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.product-item__price{
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+
+

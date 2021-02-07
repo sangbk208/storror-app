@@ -1,0 +1,99 @@
+.about-us{
+    height: 690px;
+}
+
+/* About us main info */
+.about-us__main-info{
+    height: 620px;
+    padding: 0 50px 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us__title{
+    color: var(--white-color);
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 7rem;
+    text-align: center;
+    margin: 20px 0;
+    font-family: Storror Eurostile Ultra Extended,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.about-us__info{
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: justify;
+}
+
+.about-us__youtube-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.about-us__button-arrow{
+    margin-top: 40px;
+}
+
+.about-us__button-link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 18px 40px;
+    background-color: var(--primary-color);
+    transition: background-color 0.2s ease;
+}
+
+.about-us__button-link:hover{
+    background-color: #1c9f76;
+}
+
+.about-us__icon{
+    color: var(--white-color);
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+/* About us team photo */
+.about-us__team-photo{
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us__since-title{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    display: block;
+    margin: 39px 0;
+}
+
+.about-us__photo-title{
+    color: white;
+    font-size: 2.6rem;
+    display: block;
+    font-weight: bold;
+    font-family: Storror Eurostile Ultra Extended,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.about-us__team-photo-img{
+    width: 100%;
+}
+
+/* .about-us__secondary-info} */
+.about-us__secondary-info{
+    height: 70px;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 2.4rem;
+    padding: 7px 200px;
+    display: block;
+}
