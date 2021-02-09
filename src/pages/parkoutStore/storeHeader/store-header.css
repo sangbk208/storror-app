@@ -1,0 +1,11 @@
+.store-header{
+    height: var(--header-height-store);
+    display: flex;
+}
+
+.store-header__title{
+    font-size: 5rem;
+    margin: 0 auto;
+    color: var(--white-color);
+    padding-top: calc(var(--padding-top-store-header))
+}

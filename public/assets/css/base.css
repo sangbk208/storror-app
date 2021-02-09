@@ -3,8 +3,10 @@
     --black-color: #000;
     --text-color: #333;
     --primary-color: rgba(34, 191, 142, 1.0);
-    --border-color: #dbdbdb;
+    --border-color: hsl(0, 0%, 86%);
     --header-height: 580px;
+    --header-height-store: 208px;
+    --padding-top-store-header: calc((var(--header-height-store) - var(--nav-height))/2 + var(--nav-height) - 3rem);
     --nav-height: 60px;
     --header-search: calc(var(--header-height) - var(--nav-height));
     --header-sort-bar-height: 46px;

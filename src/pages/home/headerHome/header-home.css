@@ -1,0 +1,30 @@
+.header-home{
+    height: var(--header-height);
+}
+
+/* explore */
+.header-home__navbar-explore{
+    position: absolute;
+    top: calc(var(--header-height) - 66px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.header-home__navbar-explore::after{
+    content: "";
+    position: absolute;
+    top: 146%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 50px;
+    background-color: var(--primary-color);
+}
+
+.header-home__navbar-explore-link{
+    color: var(--white-color);
+    font-size: 2.4rem;
+    text-decoration: none;
+    font-family: Storror Eurostile Ultra Extended;
+}

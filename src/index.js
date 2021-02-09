@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import App from './pages/home/App';
+import App from './pages/App';
 import reduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import reducers from './redux/reducers/index.js';

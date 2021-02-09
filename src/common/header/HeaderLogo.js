@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 HeaderLogo.propTypes = {
     
@@ -7,7 +8,7 @@ HeaderLogo.propTypes = {
 
 function HeaderLogo(props) {
     return (
-        <div className="header__logo">
+        <Link to="/" className="header__logo">
             <i className="storror-icon">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1375 132" fill="currentColor" height="1em">
                     <g>
@@ -37,7 +38,7 @@ function HeaderLogo(props) {
                     </g>
                 </svg>
             </i>
-        </div>
+        </Link>
     );
 }
 
