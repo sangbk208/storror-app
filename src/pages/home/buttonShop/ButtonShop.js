@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 import './button-shop.css';
 
 ButtonShop.propTypes = {
@@ -9,11 +9,11 @@ ButtonShop.propTypes = {
 function ButtonShop(props) {
     return (
         <div className="button-shop">
-            <a className="button-shop__link" href="#">
+            <Link to="/parkour-store" className="button-shop__link" href="#">
                 STORROR STORE
                 <i className="button-shop__icon fas fa-long-arrow-alt-right"></i>
                 <i className="button-shop__icon fas fa-cart-plus"></i>
-            </a>
+            </Link>
         </div>
     );
 }

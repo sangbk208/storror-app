@@ -6,16 +6,19 @@
 
 .product-item{
     cursor: pointer;
+    padding-bottom: 22px;
 }
 .product-item__img{
+    padding-top: 100%;
     background-size: contain;
-    height: 334px;
+    /* background-position: center; */
     background-repeat: no-repeat;
 }
 
 .product-item__footer-info{
     background-color: black;
     padding: 22px 10px;
+    height: 112px;
 }
 
 .product-item__name{

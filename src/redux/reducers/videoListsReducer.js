@@ -5,7 +5,6 @@ import { FETCH_VIDEOLISTS } from "../actions/typeActions";
 const videoListsReducer = (state=[], action) =>{
     switch (action.type) {
         case FETCH_VIDEOLISTS:
-            console.log(action.payload);
             return [...action.payload];
         default:
             return state;

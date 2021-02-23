@@ -5,7 +5,7 @@ import Header from '../common/header/Header';
 import Footer from '../common/footer/Footer';
 import SideBarSocial from '../common/sidebar/SideBarSocial';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
-import ParkoutStore from './parkoutStore/ParkoutStore';
+import ParkourStore from './parkourStore/ParkourStore';
 
 App.propTypes = {
     
@@ -19,7 +19,7 @@ function App(props) {
                 <Cart/>
                 <Switch>
                     <Route path="/" component={Home} exact/>
-                    <Route path="/parkout-store" component={ParkoutStore} exact/>
+                    <Route path="/parkour-store" component={ParkourStore}/>
                 </Switch>
                 <SideBarSocial/>
                 <Footer/>

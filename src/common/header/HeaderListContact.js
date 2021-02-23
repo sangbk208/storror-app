@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import {Link} from 'react-router-dom';
 
 HeaderListContact.propTypes = {
     
@@ -10,51 +11,51 @@ function HeaderListContact(props) {
         <div>
             <ul className="header__navbar-list">
                 <li className="header__navbar-item">
-                    <a href="https://www.w3schools.com" className="header__navbar-item-link">
+                    <Link to="/" className="header__navbar-item-link">
                         HOME
-                    </a>
+                    </Link>
                 </li>
                 <li className="header__navbar-item">
-                    <a href="https://www.w3schools.com" className="header__navbar-item-link">
+                    <Link to="/parkour-store" className="header__navbar-item-link">
                         STORE
-                    </a>
+                    </Link>
                     <i className="header__navbar-icon fas fa-chevron-down"></i>
                     <div className="header__navbar-menu">
                         <ul className="header__navbar-menu-list">
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">T-SHIRTS</a>
+                                <Link to="/parkour-store/t-shirts" className="header__navbar-menu-link">T-SHIRTS</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">HOODIES</a>
+                                <Link to="/parkour-store/hoodies" className="header__navbar-menu-link">HOODIES</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">SWEATPANST</a>
+                                <Link to="/parkour-store/sweatpants" className="header__navbar-menu-link">SWEATPANTS</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">JACKETS</a>
+                                <Link to="/parkour-store/jackets" className="header__navbar-menu-link">JACKETS</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">SHOES</a>
+                                <Link to="/parkour-store/shoes" className="header__navbar-menu-link">SHOES</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">SOCKS</a>
+                                <Link to="/parkour-store/socks" className="header__navbar-menu-link">SOCKS</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">HATS</a>
+                                <Link to="/parkour-store/hats" className="header__navbar-menu-link">HATS</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">BAGS</a>
+                                <Link to="/parkour-store/bags" className="header__navbar-menu-link">BAGS</Link>
                             </li>
                             <li className="header__navbar-menu-item">
-                                <a href="https://www.w3schools.com" className="header__navbar-menu-link">GRIF CARDS</a>
+                                <Link to="/parkour-store/gift-cards" className="header__navbar-menu-link">GIFT CARDS</Link>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li className="header__navbar-item">
-                    <a href="https://www.w3schools.com" className="header__navbar-item-link">
+                    <Link to="" className="header__navbar-item-link">
                         ABOUT
-                    </a>
+                    </Link>
                     <i className="header__navbar-icon fas fa-chevron-down"></i>
                     <div className="header__navbar-menu">
                         <ul className="header__navbar-menu-list">
@@ -83,24 +84,24 @@ function HeaderListContact(props) {
                     </div>
                 </li>
                 <li className="header__navbar-item">
-                    <a href="https://www.w3schools.com" className="header__navbar-item-link">
+                    <Link to="" className="header__navbar-item-link">
                         BLOG
-                    </a>
+                    </Link>
                 </li>
                 <li className="header__navbar-item">
-                    <a href="https://www.w3schools.com" className="header__navbar-item-link">
+                    <Link to="" className="header__navbar-item-link">
                         LOOKBOOK
-                    </a>
+                    </Link>
                 </li>
                 <li className="header__navbar-item">
-                    <a href="https://www.w3schools.com" className="header__navbar-item-link">
+                    <Link to="" className="header__navbar-item-link">
                         FAQS
-                    </a>
+                    </Link>
                 </li>
                 <li className="header__navbar-item">
-                    <a href="https://www.w3schools.com" className="header__navbar-item-link">
+                    <Link to="" className="header__navbar-item-link">
                         CONTACT
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>
