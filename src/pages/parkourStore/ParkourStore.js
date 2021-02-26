@@ -23,7 +23,7 @@ function ParkourStore(props) {
 
     return (
         <div className="parkout-store">
-            <StoreHeader/>
+            <StoreHeader title={type}/>
             <div className="parkout-store__product-list">
                 <div className="grid wide">
                     <ProductItem products={!type?products:category}/>

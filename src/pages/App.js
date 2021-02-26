@@ -6,6 +6,7 @@ import Footer from '../common/footer/Footer';
 import SideBarSocial from '../common/sidebar/SideBarSocial';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import ParkourStore from './parkourStore/ParkourStore';
+import ProductPage from './productPage/ProductPage';
 
 App.propTypes = {
     
@@ -20,6 +21,7 @@ function App(props) {
                 <Switch>
                     <Route path="/" component={Home} exact/>
                     <Route path="/parkour-store" component={ParkourStore}/>
+                    <Route path="/products" component={ProductPage}/>
                 </Switch>
                 <SideBarSocial/>
                 <Footer/>

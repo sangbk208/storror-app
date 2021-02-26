@@ -10,7 +10,7 @@ function StoreHeader(props) {
     const {title} = props;
     return (
         <div className="store-header" style={{"backgroundImage": `url(${storeHeaderCover})`}}>
-            <span className="store-header__title">STORROR® CLOTHING</span>
+            <span className="store-header__title">STORROR® {Boolean(title)?title.toUpperCase():"CLOTHING"}</span>
         </div>
     );
 }
