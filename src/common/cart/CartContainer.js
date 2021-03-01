@@ -12,11 +12,11 @@ function CartContainer(props) {
         <div className="cart-container">
             <div className="cart-container__header">
                 <span className="cart-container__header-title">SHOPPING CART</span>
-                <i className="cart-container__header-icon fas fa-times"></i>
+                <label for="card-input">
+                    <i className="cart-container__header-icon fas fa-times"></i>
+                </label>
             </div>
             <div className="cart-container__list">
-                <CartItem/>
-                <CartItem/>
                 <CartItem/>
                 <CartItem/>
             </div>

@@ -40,10 +40,10 @@ function ProductPage(props) {
         <div className="product-page">
             <div className="grid wide">
                 <div className="row">
-                    <div className="col l-6">
+                    <div className="col l-6 m-6 c-12">
                         <ProductImg images={product.detail.images}/>
                     </div>
-                    <div className="col l-6">
+                    <div className="col l-6 m-6 c-12">
                         <ProductContent product={product}/>
                     </div>
                 </div>

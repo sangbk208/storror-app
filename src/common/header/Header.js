@@ -10,9 +10,9 @@ Header.propTypes = {
 function Header(props) {
     return (
         <div>
-            <div className="header__navbar-fullwidth">
+            <div className="header__navbar-fullwidth ">
                 <div className="grid wide">
-                    <nav className="header__navbar">
+                    <nav className="header__navbar ">
                         <HeaderLogo/>
                         <HeaderListContact/>
                     </nav>

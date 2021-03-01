@@ -2,3 +2,32 @@
 .parkout-store__product-list{
     padding: 40px 0  18px 0;
 }
+
+/* mobile & tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+   
+}
+    
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    
+    
+}
+
+/* mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .parkout-store__product-list{
+        font-size: 3.4rem;
+        padding: 20px;
+    }
+}

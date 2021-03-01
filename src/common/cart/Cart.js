@@ -9,10 +9,12 @@ Cart.propTypes = {
 function Cart(props) {
     return (
         <div>
-            <div className="cart">
+            <label for="card-input" className="cart">
                 <span className="cart-count">1</span>
                 <i className="cart-icon fas fa-shopping-cart"></i>
-            </div>
+            </label>
+            <input className="card-input-check" hidden type="checkbox" name="" id="card-input"/>
+            <label for="card-input" className="cart__overlay"></label>
             <CartContainer/>
         </div>
     );

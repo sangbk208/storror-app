@@ -12,7 +12,7 @@ function ProductItem(props) {
     const renderList = () =>{
         return products.map(product=>{
                 return (
-                    <div key={product.id} className="col l-3">
+                    <div key={product.id} className="col l-3 m-6 c-12">
                         <Link to={`/products/${product.name.toLowerCase().split(' ').join('-')}`} className="product-item">
                             <div className="product-item__img" style={{"backgroundImage": `url(${product.thumbnail})`}}></div>
                             <footer className="product-item__footer-info">

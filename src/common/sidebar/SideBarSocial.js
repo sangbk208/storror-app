@@ -8,7 +8,7 @@ SideBarSocial.propTypes = {
 
 function SideBarSocial(props) {
     return (
-        <div className="sidebar__social">
+        <div className="sidebar__social hide-on-mobile-tablet">
             <ul className="sidebar__social-list">
                 <li className="sidebar__social-item">
                     <span className="name">#STORROR</span>

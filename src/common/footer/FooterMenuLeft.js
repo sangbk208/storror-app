@@ -9,7 +9,7 @@ FooterMenuLeft.propTypes = {
 function FooterMenuLeft(props) {
     return (
         <div className="col l-2">
-            <ul className="footer__menu-list">
+            <ul className="footer__menu-list hide-on-mobile-tablet">
                 <li className="footer__menu-item">
                     <Link to="/" className="footer__menu-link">HOME</Link>
                 </li>

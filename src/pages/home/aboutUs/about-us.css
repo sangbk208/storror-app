@@ -97,3 +97,38 @@
     padding: 7px 200px;
     display: block;
 }
+
+/* mobile & tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    .about-us__main-info{
+        height: 400px;
+        padding: 0 100px 50px 100px;
+    }
+    .about-us__team-photo-img{
+        width: 566px;
+        display: block;
+    }
+   
+}
+    
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    
+    
+}
+
+/* mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    
+}

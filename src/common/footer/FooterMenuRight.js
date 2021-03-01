@@ -6,7 +6,7 @@ FooterMenuRight.propTypes = {
 
 function FooterMenuRight(props) {
     return (
-        <div className="col l-2">
+        <div className="col l-2 m-12 c-12">
             <ul className="footer__menu-list">
                 <li className="footer__menu-item">
                     <a href="https://www.w3schools.com" className="footer__menu-link">TEAMS OF SALE</a>

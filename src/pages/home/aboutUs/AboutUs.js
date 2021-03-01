@@ -13,10 +13,10 @@ function AboutUs(props) {
         <div className="about-us" style={{"backgroundImage": `url(${cover})`}}>
             <div className="grid">
                 <div className="row no-gutters">
-                    <div className="col l-6">
+                    <div className="col l-6 m-12">
                         <AboutUsMainInfo/>
                     </div>
-                    <div className="col l-6">
+                    <div className="col l-6 m-12">
                         <AboutUsTeamPhoto/>
                     </div>
                 </div>

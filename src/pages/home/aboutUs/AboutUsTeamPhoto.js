@@ -9,7 +9,7 @@ AboutUsTeamPhoto.propTypes = {
 function AboutUsTeamPhoto(props) {
     return (
         <div className="about-us__team-photo">
-            <span className="about-us__since-title">SINCE 10.10.10</span>
+            <span className="about-us__since-title hide-on-mobile-tablet">SINCE 10.10.10</span>
             <img className="about-us__team-photo-img" src={teamPhoto} alt="storror_team_photo"/>
         </div>
     );

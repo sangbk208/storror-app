@@ -13,7 +13,7 @@ function ProductQuantity(props) {
 
     useEffect(()=>{ 
         dispatch(updateQuantity(count));
-    },[count]);
+    },[count, dispatch]);
 
     const handleOnchage=(e)=>{
         const {value} = e.target;

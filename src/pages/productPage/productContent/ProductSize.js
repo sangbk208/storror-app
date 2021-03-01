@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useSelector } from 'react-redux';
 
@@ -32,7 +32,7 @@ function ProductSize(props) {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="product-size">
             <select defaultValue={'DEFAULT'} name="size" className="product-size__select" ref={register({ required: true })}>
-                <option value="DEFAULT" disabled>Select your size</option>
+                <option value="DEFAULT" className="product-size__option" disabled>Select your size</option>
                 {renderSizelist()}
             </select>
             <input className="product-size__add-to-card" type="submit" value="Add to card"/>

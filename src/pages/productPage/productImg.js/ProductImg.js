@@ -17,17 +17,18 @@ function ProductImg(props) {
     const renderListimg = () =>{
         return imgList.map((img) => {
             return (
-                <li onClick={()=>handleClickImg(img)} key={img} className="product-img__item" style={{"backgroundImage": `url(${img})`}}></li>
+                <img onClick={()=>handleClickImg(img)} key={img} className="product-img__item" src={`${img}`}/>
             );
         });
     }
 
     return (
         <div className="product-img">
-            <div className="product-img__thumbnail" style={{"backgroundImage": `url(${order})`}}></div>
-            <ul className="product-img__list">
+            <img className="product-img__thumbnail" src={`${order}`}></img>
+            <div className="product-img__list">
                 {renderListimg()}
-            </ul>
+            </div>
+            
         </div>
     );
 }

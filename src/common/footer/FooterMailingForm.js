@@ -11,7 +11,7 @@ function FooterMailingForm(props) {
     const onSubmit = data => console.log(data);
     return (
         <div className="col l-6">
-            <div className="footer__mailing-form">
+            <div className="footer__mailing-form hide-on-mobile-tablet">
                 <span className="footer__mailing-form-title">NEWSLETTER: GET UPDATES AND OFFERS STRAIGHT TO YOUR INBOX!</span>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="footer__input-name">
