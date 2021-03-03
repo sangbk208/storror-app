@@ -15,16 +15,16 @@ function ProductImg(props) {
     }
     
     const renderListimg = () =>{
-        return imgList.map((img) => {
+        return imgList.map((img, index) => {
             return (
-                <img onClick={()=>handleClickImg(img)} key={img} className="product-img__item" src={`${img}`}/>
+                <img alt="img" onClick={()=>handleClickImg(img)} key={index} className="product-img__item" src={`${img}`}/>
             );
         });
     }
 
     return (
         <div className="product-img">
-            <img className="product-img__thumbnail" src={`${order}`}></img>
+            <img className="product-img__thumbnail" alt="img" src={`${order}`}></img>
             <div className="product-img__list">
                 {renderListimg()}
             </div>

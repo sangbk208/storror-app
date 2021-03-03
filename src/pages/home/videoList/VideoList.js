@@ -16,12 +16,10 @@ function VideoList(props) {
         dispatch(fetchVideoLists());
     },[dispatch]);
 
-    console.log("fetchVideo", fetchVideo);
-
     const renderVideoItem = () =>(
         fetchVideo.map(item=> {
             return (
-                <div className="col l-6">
+                <div key={item.title} className="col l-6 c-12 m-12">
                     <VideoItem 
                         content={item}
                     />

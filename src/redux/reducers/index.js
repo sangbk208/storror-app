@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux';
+import cartReducer from './cartReducer';
 import categoryReducer from './categoryReducer';
 import productsReducer from './productsReducer';
 import quantityReducer from './quantityReducer';
@@ -9,4 +10,5 @@ export default combineReducers({
     products: productsReducer,
     category: categoryReducer,
     quantity: quantityReducer,
+    cart: cartReducer,
 });

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './side-bar-social.css';
 
 SideBarSocial.propTypes = {
@@ -14,27 +13,27 @@ function SideBarSocial(props) {
                     <span className="name">#STORROR</span>
                 </li>
                 <li className="sidebar__social-item">
-                    <a href="#" className="sidebar__social-link">
+                    <a href="google.com" className="sidebar__social-link">
                         <i className="sidebar__social-icon-down fas fa-long-arrow-alt-down"></i>
                     </a>
                 </li>
                 <li className="sidebar__social-item">
-                    <a href="#" className="sidebar__social-link">
+                    <a href="google.com" className="sidebar__social-link">
                         <i className="sidebar__social-icon fab fa-youtube"></i>
                     </a>
                 </li>
                 <li className="sidebar__social-item">
-                    <a href="#" className="sidebar__social-link">
+                    <a href="google.com" className="sidebar__social-link">
                         <i className="sidebar__social-icon sidebar__social-icon--insta fab fa-instagram"></i>
                     </a>
                 </li>
                 <li className="sidebar__social-item">
-                    <a href="#" className="sidebar__social-link">
+                    <a href="google.com" className="sidebar__social-link">
                         <i className="sidebar__social-icon fab fa-facebook-f"></i>
                     </a>
                 </li>
                 <li className="sidebar__social-item">
-                    <a href="#" className="sidebar__social-link">
+                    <a href="google.com" className="sidebar__social-link">
                         <i className="sidebar__social-icon fab fa-twitter"></i>
                     </a>
                 </li>

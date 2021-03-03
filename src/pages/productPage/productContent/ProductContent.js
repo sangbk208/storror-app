@@ -29,7 +29,7 @@ function ProductContent(props) {
                 {renderDescription()}
             </ul>
             <ProductQuantity/>
-            <ProductSize option={product.detail.option}/>
+            <ProductSize option={product.detail.option} product={product}/>
         </div>
     );
 }

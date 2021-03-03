@@ -3,3 +3,7 @@ export const FETCH_PRODUCTS = "FETCH_PRODUCTS";
 export const FETCH_PRODUCT = "FETCH_PRODUCT";
 export const FETCH_CATEGORY = "FETCH_CATEGORY";
 export const UPDATE_QUANTITY = "UPDATE_QUANTITY";
+export const ADD_TO_CART = "ADD_TO_CART";
+export const FETCH_CARTS = "FETCH_CARTS";
+export const DELETE_CART = "DELETE_CART";
+export const EDIT_CART = "EDIT_CART";

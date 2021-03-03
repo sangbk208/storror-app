@@ -146,18 +146,26 @@
 
 .header__navbar-mb-item-link{
     display: block;
-    border-bottom: 1px solid black;
     padding: 10px 0;
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
     color: rgba(90, 90, 90, 1.0);
+    flex: 1;
+}
+
+.header__navbar-mb-container{
+    display: flex;
+    border-bottom: 1px solid rgb(75, 72, 72);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__navbar-mb-icon{
     float: right;
     padding-right: 20px;
     line-height: 1.2rem;
+    padding: 10px 20px;
 }
 
 .header__navbar-mb-menu{

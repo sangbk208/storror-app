@@ -1,7 +1,6 @@
 import React from 'react';
 import HeaderLogo from './HeaderLogo';
 import HeaderListContact from './HeaderListContact';
-import cover from '../../assets/img/background_header.PNG';
 
 Header.propTypes = {
     

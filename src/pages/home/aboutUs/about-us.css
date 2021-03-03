@@ -112,6 +112,16 @@
         width: 566px;
         display: block;
     }
+    .about-us{
+        height: auto;
+    }
+    .about-us__team-photo{
+        height: auto;
+    }
+    .about-us__secondary-info{
+        height: auto;
+        padding: 20px 50px;
+    }
    
 }
     

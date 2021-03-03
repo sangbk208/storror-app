@@ -1,5 +1,6 @@
 .header-home{
     height: var(--header-height);
+    position: relative;
 }
 
 /* explore */
@@ -29,7 +30,19 @@
     font-family: Storror Eurostile Ultra Extended;
 }
 
-/* respon */
+/* video background*/
+#myVideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
 
 /* responsive */
 /* mobile & tablet */

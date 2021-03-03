@@ -4,15 +4,16 @@
 }
 
 .video-item{
-    display: flex;
+  
 }
 
 .video-item__container{
-    height: 380px;
-    width: 380px;
+    height: 384px;
+    
 }
 
 .video-item__container--content{
+   
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,12 +1,13 @@
 .home-store{
     background-size: cover;
-    height: 1500px;
+    background-position: center;
     background-repeat: no-repeat;
+    height: 2000px;
 }
 
 .row-product {
     margin: 0 42px;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
 }
 
 .home-store__view-store{
@@ -23,9 +24,39 @@
     font-size: 1.4rem;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .home-store__icon{
     font-size: 2rem;
     color: white;
+}
+
+
+/* mobile & tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+}
+    
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .home-store{
+        height: 1200px;
+    }
+    
+}
+
+/* mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    
 }
