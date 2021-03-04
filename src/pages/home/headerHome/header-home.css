@@ -70,5 +70,8 @@
     .hide-on-mobile{
         display: none;
     }
-    
+    .header-home{
+        height: 35vh;
+    }
+
 }

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import uuid from 'react-uuid';
-import { ADD_TO_CART, EDIT_CART, FETCH_CARTS, DELETE_CART } from "./typeActions";
+import { ADD_TO_CART, EDIT_CART, FETCH_CARTS, DELETE_CART, ORDER_CART } from "./typeActions";
 // import _uniqueId from 'lodash/uniqueId';
 
 const newPrice = (price, quantity) =>{
@@ -69,6 +69,15 @@ export const editCart = (editProduct, quantity) =>{
     return {
         type: EDIT_CART,
         payload: JSON.parse(localStorage.getItem("cart"))[index],
+    }
+}
+
+// Edit cart 
+export const orderCart = () =>{
+    localStorage["cart"] = JSON.stringify([]);
+    return {
+        type: ORDER_CART,
+        payload: JSON.parse(localStorage.getItem("cart")),
     }
 }
 

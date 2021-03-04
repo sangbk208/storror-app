@@ -19,7 +19,7 @@ function HomeStore(props) {
         dispatch(fetchProducts());
     },[dispatch]);
 
-    if (height < 1023){
+    if (height < 800){
         products = products.slice(1, 3);
     }
 

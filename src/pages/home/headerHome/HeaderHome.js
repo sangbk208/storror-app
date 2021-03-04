@@ -14,7 +14,7 @@ function HeaderHome(props) {
             <video autoPlay muted loop id="myVideo">
                 <source src={video} />
             </video>
-            <div className="header-home__navbar-explore hide-on-tablet">
+            <div className="header-home__navbar-explore hide-on-mobile-tablet">
                 <Link to="/" className="header-home__navbar-explore-link">EXPLORE</Link>
             </div>
         </header>

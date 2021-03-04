@@ -23,7 +23,6 @@ function CartItem(props) {
         }
     }
 
-
     return (
         <div className="cart-item">
             <div className="cart-item__product-img" style={{"backgroundImage": `url(${product.product.thumbnail})`}}></div>
@@ -32,7 +31,7 @@ function CartItem(props) {
                     <span className="cart-item__content-name">{product.product.name}</span>
                     <span onClick={hancleOnclickRemove} className="cart-item__content-delete">Remove</span>
                 </div>
-                <div className="cart-item__content-size">{product.option}</div>
+                <div className="cart-item__content-size">{!product.option?"No size":product.option}</div>
                 <div className="cart-item__content-bottom">
                     <div className="cart-item__content-quantity">
                         <button onClick={()=>product.quantity<=1?dispatch(editCart(product, 1)):dispatch(editCart(product, product.quantity - 1))} 

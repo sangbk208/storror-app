@@ -15,6 +15,7 @@ function Cart(props) {
     useEffect(()=>{
         dispatch(fetchCarts());
     },[dispatch]);
+    
     return (
         <div>
             <label htmlFor="card-input" className="cart">

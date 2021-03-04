@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './cart.css';
 import {Link} from 'react-router-dom';
 import CartItem from './CartItem';
@@ -48,7 +48,7 @@ function CartContainer(props) {
                     <span className="cart-container__subtotal-title">Subtotal:</span>
                     <span className="cart-container__subtotal-amount">{String(currentTotalPrice())+' £'}</span>
                 </div>
-                <Link to="/" className="cart-container__footer-btn-link">Begin checkout</Link>
+                <Link to="/checkout" className="cart-container__footer-btn-link">Begin checkout</Link>
             </div>
         </div>
     );

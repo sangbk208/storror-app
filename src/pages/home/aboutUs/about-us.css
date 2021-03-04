@@ -1,5 +1,5 @@
 .about-us{
-    height: 690px;
+    /* height: 690px; */
 }
 
 /* About us main info */
@@ -34,13 +34,14 @@
 }
 
 .about-us__button-arrow{
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .about-us__button-link{
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.5rem;
+    line-height: 1.5rem;
     font-weight: 500;
     padding: 18px 40px;
     background-color: var(--primary-color);
@@ -106,12 +107,8 @@
 
     .about-us__main-info{
         height: 400px;
-        padding: 0 100px 50px 100px;
     }
-    .about-us__team-photo-img{
-        width: 566px;
-        display: block;
-    }
+   
     .about-us{
         height: auto;
     }
@@ -131,7 +128,11 @@
     .hide-on-tablet{
         display: none;
     }
-    
+    .about-us__main-info{
+        height: 400px;
+        padding: 0 93px 50px 93px;
+        height: 620px;
+    }
     
 }
 
@@ -140,5 +141,40 @@
     .hide-on-mobile{
         display: none;
     }
+
+    .about-us__main-info{
+        padding: 0;
+    }
+
+    .about-us__title{
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3rem;
+        margin-bottom: 10px;
+        margin-top: 0;
+        padding: 0 24px;
+    }
     
+    .about-us__info{
+        color: var(--white-color);
+        font-size: 1.4rem;
+        font-weight: 200;
+        line-height: 2.4rem;
+        padding: 0 24px;
+    }
+
+    .about-us__button-arrow{
+        margin: 24px 24px;
+    }
+    
+    .about-us__button-link{
+        padding: 14px 30px;
+    }
+    .about-us__team-photo-img{
+        width: 100%;
+        padding: 10px 14px
+    }
+    .about-us__secondary-info{
+        padding: 10px 24px;
+    }
 }

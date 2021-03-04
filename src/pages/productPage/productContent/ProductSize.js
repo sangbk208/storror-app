@@ -44,10 +44,9 @@ function ProductSize(props) {
             );
         });
     };
-    
-    return (
-        <form onSubmit={handleSubmit(onSubmit)} className="product-size">
-            <ToastContainer autoClose={3000}/>
+
+    const renderSelect = () =>{
+        return (
             <select defaultValue={""} 
                     name="size" className="product-size__select" 
                     ref={register({ required: "This input is required." })}>
@@ -55,7 +54,17 @@ function ProductSize(props) {
                         className="product-size__option">Select your size</option>
                 {renderSizelist()}
             </select>
-            {errors.size && <div className="product-size__error"><i className="product-size__error-icon fas fa-exclamation-triangle"></i>Please Select your size!</div>}
+        );
+    }
+    
+    return (
+        <form onSubmit={handleSubmit(onSubmit)} className="product-size">
+            <ToastContainer autoClose={3000}/>
+            {sizeList.length!==0 && renderSelect()}
+            {errors.size && <div className="product-size__error">
+                                <i className="product-size__error-icon fas fa-exclamation-triangle"></i>
+                                Please Select your size!
+                            </div>}
             <input className="product-size__add-to-card" type="submit" value="Add to card"/>
         </form>
     );
