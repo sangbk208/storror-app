@@ -2,23 +2,12 @@ import React from "react";
 import "./cart.css";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
+import { currentTotalPrice } from "../../helper/mix";
 
 CartContainer.propTypes = {};
 
-const newTotalPrice = (totalPrice) => {
-  totalPrice = totalPrice.replace(" ", "").replace("£", "").replace(",", ".");
-  return Math.round(Number(totalPrice) * 100) / 100;
-};
-
 function CartContainer(props) {
   const { cartProducts } = props;
-
-  const currentTotalPrice = () => {
-    const array = cartProducts.map((item) => {
-      return newTotalPrice(item.totalPrice);
-    });
-    return Math.round(array.reduce((a, b) => a + b, 0) * 100) / 100;
-  };
 
   const renderListCartItem = () => {
     return cartProducts.map((item) => {
@@ -34,12 +23,14 @@ function CartContainer(props) {
           <i className="cart-container__header-icon fas fa-times"></i>
         </label>
       </div>
-      <div className="cart-container__list">{renderListCartItem()}</div>
+      <div data-testid="cart-product-list-id" className="cart-container__list">
+        {renderListCartItem()}
+      </div>
       <div className="cart-container__footer">
         <div className="cart-container__subtotal">
           <span className="cart-container__subtotal-title">Subtotal:</span>
           <span className="cart-container__subtotal-amount">
-            {String(currentTotalPrice()) + " £"}
+            {String(currentTotalPrice(cartProducts)) + " £"}
           </span>
         </div>
         <Link to="/checkout" className="cart-container__footer-btn-link">
